@@ -1,0 +1,27 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+\begin{align*}\begin{split}
+&\left| y_i - \boldsymbol x_i^T \boldsymbol{\hat{b}}_{-i,\Gamma} \right|^2 \\
+&\phantom{100000} = 
+\left| y_i - \boldsymbol x_i^T \left[
+\boldsymbol{\hat{b}}_\Gamma + 
+\frac{\boldsymbol A^{-1} \boldsymbol x_i}{1 - h_i} 
+\left(\hat{y}_i - y_i\right)
+\right] \right|^2 \\
+&\phantom{100000} = 
+\left|y_i - \hat{y}_i - 
+\frac{h_i}{1 - h_i} 
+\left(\hat{y}_i - y_i \right)
+\right|^2 \\
+&\phantom{100000} =
+\left| \left( y_i - \hat{y}_i \right)
+\left(1 + \frac{h_i}{1 - h_i}\right)
+\right|^2 \\
+&\phantom{100000} =
+\left| \frac{y_i - \hat{y}_i}{1 - h_i} \right|^2
+\end{split}\end{align*}
+\end{document}

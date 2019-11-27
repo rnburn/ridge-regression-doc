@@ -1,0 +1,26 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+\begin{align*}\begin{split}
+\boldsymbol{\hat{b}}_{-i,\Gamma} &= 
+\left[ \boldsymbol A^{-1} + 
+\frac{\boldsymbol A^{-1} \boldsymbol x_i \boldsymbol x_i^T \boldsymbol A^{-1}}{1 - h_i} \right] 
+\left(\boldsymbol X^T \boldsymbol y - \boldsymbol x_i y_i \right) \\
+&= \boldsymbol A^{-1}\left(\boldsymbol X^T \boldsymbol y - \boldsymbol x_i y_i \right) + \\
+&\phantom{=} \left[\frac{\boldsymbol A^{-1} \boldsymbol x_i \boldsymbol x_i^T \boldsymbol A^{-1}}{1 - h_i}\right]
+\left(\boldsymbol X^T \boldsymbol y - \boldsymbol x_i y_i \right) \\
+&= \boldsymbol{\hat{b}}_\Gamma - 
+\boldsymbol A^{-1} \boldsymbol x_i y_i +
+\frac{\boldsymbol A^{-1} \boldsymbol x_i}{1 - h_i}
+\left(\hat{y}_i - h_i y_i \right) \\
+&= \boldsymbol{\hat{b}}_\Gamma + 
+\frac{\boldsymbol A^{-1} \boldsymbol x_i}{1 - h_i}
+\left(\hat{y}_i - h_i y_i - \left(1 - h_i\right) y_i \right) \\
+&= \boldsymbol{\hat{b}}_\Gamma + 
+\frac{\boldsymbol A^{-1} \boldsymbol x_i}{1 - h_i}
+\left(\hat{y}_i - y_i \right) \\
+\end{split}\end{align*}
+\end{document}
