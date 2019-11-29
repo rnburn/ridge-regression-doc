@@ -1,0 +1,22 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+\begin{align*}\begin{split}
+\frac{\partial h_i}{\partial \alpha_s} &=
+\frac{\partial}{\partial \alpha_s} \left(
+\boldsymbol x_i^T \boldsymbol A^{-1} \boldsymbol x_i \right) \\
+&= \boldsymbol x_i^T 
+\left(\frac{\partial \boldsymbol A^{-1}}{\partial \alpha_s}\right) \boldsymbol x_i \\
+&= \boldsymbol x_i^T 
+\left( - \boldsymbol A^{-1} \frac{\partial \boldsymbol A}{\partial \alpha_s}
+\boldsymbol A^{-1} \right)
+\boldsymbol x_i \\
+&= - \boldsymbol x_i^T \boldsymbol A^{-1}
+\left( 2 \alpha_s \boldsymbol e_s \boldsymbol e_s^T \right)
+\boldsymbol A^{-1} \boldsymbol x_i \\
+&= -2 \alpha_s \left( \boldsymbol X \boldsymbol A^{-1} \right)_{is}^2 \\
+\end{split}\end{align*}
+\end{document}
