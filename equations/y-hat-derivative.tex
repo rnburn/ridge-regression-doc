@@ -1,0 +1,19 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+\begin{align*}\begin{split}
+\frac{\partial \hat{y}_i}{\partial \alpha_s} &= \frac{\partial}{\partial \alpha_s} 
+\left( \boldsymbol e_i^T \boldsymbol X \boldsymbol A^{-1} \boldsymbol X^T \boldsymbol y \right) \\
+&= \boldsymbol e_i^T \boldsymbol X \left( \frac{\partial \boldsymbol A^{-1}}{\partial \alpha_s} \right) \boldsymbol X^T \boldsymbol y \\
+&= \boldsymbol e_i^T \boldsymbol X \left(-\boldsymbol A^{-1} \frac{\partial \boldsymbol A}{\partial \alpha_s} \boldsymbol A^{-1} \right)
+\boldsymbol X^T \boldsymbol y \\
+&= - \boldsymbol e_i^T \boldsymbol X \boldsymbol A^{-1} 
+\left( 2 \alpha_s \boldsymbol e_s \boldsymbol e_s^T \right)
+\boldsymbol A^{-1} \boldsymbol X^T \boldsymbol y \\
+&= -2 \alpha_s \left( \boldsymbol X \boldsymbol A^{-1} \right)_{is}
+\left( \boldsymbol A^{-1} \boldsymbol X^T \boldsymbol y \right)_s \\
+\end{split}\end{align*}
+\end{document}

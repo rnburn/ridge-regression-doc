@@ -1,0 +1,13 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+\begin{align*}\begin{split}
+\frac{\partial \hat{\varepsilon}_i}{\partial \alpha_s} &=
+\frac{\partial}{\partial \alpha_s} \left(\frac{y_i - \hat{y}_i}{1 - h_i}\right) \\
+&= \frac{y_i - \hat{y}_i}{\left(1 - h_i\right)^2}\left(\frac{\partial h_i}{\partial \alpha_s}\right) -
+\frac{1}{1 - h_i}\left(\frac{\partial \hat{y}_i}{\partial \alpha_s}\right) \\
+\end{split}\end{align*}
+\end{document}
