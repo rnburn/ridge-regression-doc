@@ -1,0 +1,15 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+\begin{align*}\begin{split}
+\lVert \boldsymbol y' - \boldsymbol X' \boldsymbol b \rVert^2 &= 
+\lVert \boldsymbol Q \left( \boldsymbol y - \boldsymbol X \boldsymbol b \right) \rVert^2 \\
+&= \left( \boldsymbol y - \boldsymbol X \boldsymbol b \right)^T \boldsymbol Q^T
+\boldsymbol Q \left( \boldsymbol y - \boldsymbol X \boldsymbol b \right) \\
+&= \left( \boldsymbol y - \boldsymbol X \boldsymbol b \right)^T \left( \boldsymbol y - \boldsymbol X \boldsymbol b \right) \\
+&= \lVert \boldsymbol y - \boldsymbol X \boldsymbol b \rVert^2
+\end{split}\end{align*}
+\end{document}
