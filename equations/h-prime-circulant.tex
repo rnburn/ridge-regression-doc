@@ -1,0 +1,21 @@
+\documentclass[10pt]{article}
+\usepackage[usenames]{color} %used for font color
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage[utf8]{inputenc} %useful to type directly diacritic characters
+\begin{document}
+\begin{align*}\begin{split}
+\boldsymbol X' \boldsymbol A^{-1} \boldsymbol X'^H &=
+  \boldsymbol W \boldsymbol U^T \boldsymbol X \left(\boldsymbol X^T \boldsymbol X + \alpha^2 \boldsymbol I \right)^{-1}
+   \boldsymbol X^T \boldsymbol U \boldsymbol W^H \\
+  &= \boldsymbol W \boldsymbol S \boldsymbol V^T 
+\left( \boldsymbol V \boldsymbol S^2 \boldsymbol V^T + \alpha^2 \boldsymbol I \right)^{-1}
+\boldsymbol V \boldsymbol S \boldsymbol W^H \\
+&= \boldsymbol W \boldsymbol S \boldsymbol V^T 
+\boldsymbol V \left( \boldsymbol S^2 + \alpha^2 \boldsymbol I \right)^{-1}
+\boldsymbol V^T \boldsymbol V\boldsymbol S \boldsymbol W^H \\
+&= \boldsymbol W \boldsymbol S 
+\left( \boldsymbol S^2 + \alpha^2 \boldsymbol I \right)^{-1}
+\boldsymbol S \boldsymbol W^H \\
+\end{split}\end{align*}
+\end{document}
