@@ -7,10 +7,10 @@
 \begin{align*}\begin{split}
 \boldsymbol X' \boldsymbol X'^H &= 
 \boldsymbol W \boldsymbol U^T \left( \boldsymbol U \boldsymbol S \boldsymbol V^T\right)
-\left( \boldsymbol V \boldsymbol S \boldsymbol U^T \right) \boldsymbol U \boldsymbol W^H \\
+\left( \boldsymbol V \boldsymbol S^T \boldsymbol U^T \right) \boldsymbol U \boldsymbol W^H \\
 &= \boldsymbol W \left( \boldsymbol U^T \boldsymbol U \right)
-\boldsymbol S \left(\boldsymbol V^T \boldsymbol V\right) \boldsymbol S
+\boldsymbol S \left(\boldsymbol V^T \boldsymbol V\right) \boldsymbol S^T
 \left( \boldsymbol U^T \boldsymbol U \right) \boldsymbol W^H \\
-&= \boldsymbol W \boldsymbol S^2 \boldsymbol W^H \\
+&= \boldsymbol W \boldsymbol S \boldsymbol S^T \boldsymbol W^H \\
 \end{split}\end{align*}
 \end{document}
